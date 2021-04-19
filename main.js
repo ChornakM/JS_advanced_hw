@@ -1,52 +1,12 @@
-//додаткова робта 3
-let lang;
-let days;
-let days2;
-//
-//
-//if
-//
-if ((lang = "ru")) {
-  days = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
-} else if ((lаng = "en")) {
-  days = ["mn", "ts", "wd", "th", "fr", "st", "sn"];
+function hwFunction(start) {
+  if (typeof start !== "string") {
+    alert("Введите пожалуйста данные правильноon");
+    return;
+  }
+  start = start.trim();
+  return start.length > 30 ? start.slice(0, 30) + "..." : start;
 }
-alert(days);
-//
-//
-//switch-case
-switch (lang) {
-  case "ru":
-    days2 = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
-    break;
-  case "en":
-    days2 = ["mn", "ts", "wd", "th", "fr", "st", "sn"];
-    break;
-}
-alert(days2);
-//
-//
-//многомерный массив
-let days3 = {
-  ru: ["пн", "вт", "ср", "чт", "пт", "сб", "вс"],
-  en: ["mn", "ts", "wd", "th", "fr", "st", "sn"],
-};
-alert(days3[lang]);
-//
-//
-//
-//
-//
-//
-//
-//
-//переменная namePerson
-let namePerson = prompt("Ваше имя");
-let result;
-result =
-  namePerson === "Артем"
-    ? "Директор"
-    : namePerson === "Максим"
-    ? "Преподаватель"
-    : "Cтудент";
-console.log(result);
+
+console.log(hwFunction("uuuuuuthruuuuuuuuu uuuuuuuuudduuuuu"));
+
+//я це в гуглi знайшов тыльки в мене trim чомусь непрацюэ, може я його не правильно присвоїв? хоча я читав що він убирає пробіли
